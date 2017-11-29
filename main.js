@@ -8,10 +8,11 @@ functions:
 
 */
 
-
+var dishes = ['Fish & Chips', 'Dumplings', 'Hamburgers']
 
 // get random dish
 function getDish() {
-	// body...
+	var dish = dishes[Math.floor(Math.random() * dishes.length)];
+	document.getElementById("dish").innerHTML = dish;
 }
 
