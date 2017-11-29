@@ -8,11 +8,15 @@ functions:
 
 */
 
-var dishes = ['Fish & Chips', 'Dumplings', 'Hamburgers']
+var dishes = ['Fish and Chips', 'Dumplings', 'Hamburgers']
 
 // get random dish
 function getDish() {
 	var dish = dishes[Math.floor(Math.random() * dishes.length)];
-	document.getElementById("dish").innerHTML = dish;
-}
+	var googlelink = dish.replace(/ /g, '+');
 
+	document.getElementById("dish").innerHTML = dish;
+	document.getElementById("recipeSearch").innerHTML = "Get recipe for: " + dish;
+	document.getElementById("recipeSearch").href="http://www.google.com/search?q=" + googlelink + "+recipe";
+	document.getElementById("whatToEat").innerHTML = "Eat something else";
+}
