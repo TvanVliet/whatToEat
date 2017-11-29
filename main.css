@@ -1,3 +1,36 @@
 body {
 	background-color: #e1eff2;
 }
+
+h3 {
+	padding-top: 3%;
+}
+
+#whatToEat {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	background-color: #dbc3b3;
+	font-size: 14px;
+	font-weight: 300px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 25px 80px;
+	margin: 0 auto;
+	margin-top: 2%;
+	border-radius: 20px;
+	box-shadow: 0 6px #635247;
+}
+
+#whatToEat:hover {
+	box-shadow: 0 4px #635247;
+	top: 2px;
+}
+
+#whatToEat:active {
+	box-shadow: none;
+	top: 6px;
+}*/
